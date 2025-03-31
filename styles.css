@@ -30,7 +30,7 @@ body {
 
 /* Estilizando o título */
 .header-container h1 {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     text-align: center;
     margin-left: 50px;
@@ -94,9 +94,45 @@ main {
 
 /* Estilização do rodapé */
 .footer-custom {
-    background-color: rgb(246, 255, 122);
+    background-color:  #a3b8f1;
     color: rgb(0, 0, 0);
     padding: 20px 0;
     width: 100%;
     margin-top: auto; /* Mantém o footer sempre na parte inferior */
+}
+
+/* Estilizando cada item do menu com cores diferentes */
+.menu-home {
+    background-color: rgb(211, 7, 7) !important;  /* Fundo vermelho */
+    color: white !important;           /* Texto branco */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu-reciclagem {
+    background-color: rgb(255, 166, 0) !important;  /* Fundo azul */
+    color: rgb(255, 255, 255) !important;           /* Texto amarelo */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu-reciclar {
+    background-color: rgb(104, 0, 86) !important; /* Fundo verde */
+    color: rgb(255, 255, 255) !important;            /* Texto preto */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu-local {
+    background-color: rgb(32, 4, 194) !important; /* Fundo laranja */
+    color: white !important;             /* Texto branco */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Adicionando efeito ao passar o mouse */
+.menu-item:hover {
+    opacity: 0.8;
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    transition: 0.3s ease-in-out;
 }
