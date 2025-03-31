@@ -1,82 +1,102 @@
 /* Estilizando o corpo (body) da página */
-body {
-    font-family: Arial, sans-serif; /* Fonte do texto */
-    background-color: #f4f4f4; /* Cor de fundo */
-    padding: 0px; /* Espaçamento ao redor */
+html, body {
+    height: 100%; /* Garante que a altura ocupe toda a tela */
+    margin: 0;
+    padding: 0;
 }
 
- /* Centralizando o conteúdo do cabeçalho */
- .header-container {
+body {
     display: flex;
-    align-items: center; /* Alinha a imagem e o título na mesma linha */
+    flex-direction: column; /* Faz o conteúdo empurrar o footer para baixo */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Centralizando o conteúdo do cabeçalho */
+.header-container {
+    display: flex;
+    align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    gap: 120px; /* Aumente esse valor para afastar mais a imagem do texto */
+    gap: 120px;
 }
 
 /* Ajustando a imagem da igreja */
 .header-container img {
-    max-height: 70px; /* Define um tamanho máximo */
-    margin-right: 20px; /* Espaço entre a imagem e o título */
-    margin-left: -1px;  /* Afasta a imagem mais para a esquerda */
+    max-height: 70px;
+    margin-right: 20px;
+    margin-left: -1px;
 }
 
 /* Estilizando o título */
 .header-container h1 {
-    font-size: 25px; /* Ajusta o tamanho do título */
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
-    margin-left: 50px; /* Garante um espaço entre a imagem e o título */
-    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    color: rgb(252, 252, 252);
 }
 
 /* Separar a navegação do slide */
 nav {
-    margin-bottom: 30px; /* Adiciona uma margem entre a navegação e o slide */
+    margin-bottom: 30px;
 }
 
 .navbar-brand {
-    margin-right: 15px; /* Aumente ou diminua conforme necessário */
+    margin-right: 15px;
 }
 
 /* Ajustar o tamanho do carousel */
 #carouselExampleControls {
-    max-width: 100%; /* Define o carousel para ocupar 70% da largura da tela */
-    margin-left: 0; /* Garante que o carousel fique alinhado à esquerda */
-    margin-right: auto; /* Garante que ele não fique empurrado para a direita */
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 /* Ajustar o tamanho das imagens dentro do carousel */
-#carouselExampleControls .carousel-inner img {
-    width: 100%; /* As imagens ocupam 100% da largura do carousel */
-    height: auto; /* Mantém a proporção da imagem */
+#carouselExampleControls {
+    width: 100%;
+    height: auto;
 }
+
+/* Ajuste no carrossel */
+.carousel-inner {
+    width: 100%;
+    min-height: 500px; /* Garante que o carrossel tenha uma altura mínima */
+}
+
+/* Ajuste no tamanho das imagens */
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Mantém a proporção correta */
+    max-height: 800px; /* Garante que a imagem não fique muito grande */
+    object-fit: contain; /* Mostra a imagem inteira sem cortar */
+}
+
+
 
 .header-custom {
-    background-color: #a3b8f1; /* No seu styles.css */
-    color: rgb(255, 255, 255); /* Texto branco */
-    width: 100%; /* Ocupa toda a largura da página */
-    padding: 15px 0; /* Adiciona espaçamento interno */
+    background-color: #a3b8f1;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 15px 0;
 }
 
-/* Adicionando a cor cinza escuro na barra de navegação */
+/* Estilizando a barra de navegação */
 .navbar {
-    background-color: #a8ffa0; /* Cor cinza escuro */
+    background-color:  #a8ffa0;
 }
 
-/* No seu styles.css */
+/* Corrigir posição do footer */
+main {
+    flex: 1; /* Faz o conteúdo expandir e empurrar o footer para baixo */
+}
+
+/* Estilização do rodapé */
 .footer-custom {
-    background-color: #f8f083; /* Cinza escuro */
+    background-color: rgb(246, 255, 122);
     color: rgb(0, 0, 0);
     padding: 20px 0;
-}
-
-/* Altera a cor do texto no menu para preto */
-.navbar .navbar-brand {
-    color: black !important; /* O !important garante que a cor será aplicada */
-}
-
-/* Altera a cor do texto quando o mouse passar por cima (hover) */
-.navbar .navbar-brand:hover {
-    color: #555 !important; /* Cor para quando o item estiver em destaque */
+    width: 100%;
+    margin-top: auto; /* Mantém o footer sempre na parte inferior */
 }
