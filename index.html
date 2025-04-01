@@ -17,16 +17,22 @@
         </div>
     </header>
 
-    <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand menu-item menu-home" href="./index.html">Página Inicial</a>
         <a class="navbar-brand menu-item menu-reciclagem" href="./Reciclagem.html">Reciclagem</a>
         <a class="navbar-brand menu-item menu-reciclar" href="./Reciclar.html">Reciclar</a>
         <a class="navbar-brand menu-item menu-local" href="./Local_Data.html">Local/Data</a>
-        <form class="form-inline ml-auto">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
-        </form>
+        <!-- Botão de menu de hambúrguer (vai aparecer em dispositivos menores) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links de navegação -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form id="search-form" class="form-inline ml-auto">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
     </nav>
 
     <!-- Conteúdo Dinâmico -->
@@ -64,23 +70,24 @@
     </div>
 
 
-    <!-- Rodapé -->
     <footer class="footer-custom">
-        <div class="d-flex justify-content-around align-items-center">
-            <div>
-                <img src="./imagem/logo_iasd.png" alt="Logo" class="img-fluid" style="max-height: 90px;">
-            </div>
-            <div>
-                <h5><strong>Número para Contato</strong></h5>
-                <p>(95) 3626-6928</p>
-            </div>
-            <div>
-                <h5><strong>Endereço</strong></h5>
-                <p>AV. Luis Canuto Chaves, 1408, Caçari, Boa Vista, Roraima.</p>
-            </div>
-            <div>
-                <h5><strong>Redes Sociais</strong></h5>             
-                <p>espacovidabv@gmail.com</p>
+        <div class="container">
+            <div class="row text-center text-md-left">
+                <div class="col-12 col-md-3">
+                    <img src="./imagem/logo_iasd.png" alt="Logo" class="img-fluid" style="max-height: 90px;">
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5><strong>Número para Contato</strong></h5>
+                    <p>(95) 3626-6928</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5><strong>Endereço</strong></h5>
+                    <p>AV. Luis Canuto Chaves, 1408, Caçari, Boa Vista, Roraima.</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5><strong>Redes Sociais</strong></h5>
+                    <p>espacovidabv@gmail.com</p>
+                </div>
             </div>
         </div>
     </footer>
@@ -91,3 +98,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+

@@ -136,3 +136,9 @@ main {
     transform: scale(1.05); /* Aumenta levemente o tamanho */
     transition: 0.3s ease-in-out;
 }
+
+/* No seu arquivo styles.css */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
