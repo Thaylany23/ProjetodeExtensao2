@@ -16,9 +16,10 @@ body {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Ajusta os itens para se distribuírem corretamente */
     padding-left: 20px;
     padding-right: 20px;
-    gap: 120px;
+    gap: 20px; /* Ajusta o espaço entre os elementos */
 }
 
 /* Ajustando a imagem da igreja */
@@ -30,11 +31,12 @@ body {
 
 /* Estilizando o título */
 .header-container h1 {
-    font-size: 28px;
+    font-size: 24px; /* Tamanho do texto ajustado */
     font-weight: bold;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 20px; /* Ajuste de margem */
     color: rgb(252, 252, 252);
+    flex-grow: 1;
 }
 
 /* Separar a navegação do slide */
@@ -46,7 +48,7 @@ nav {
     margin-right: 15px;
 }
 
-/* Ajustar o tamanho do carousel */
+/* Ajuste no carrossel */
 #carouselExampleControls {
     max-width: 100%;
     margin-left: 0;
@@ -73,13 +75,22 @@ nav {
     object-fit: contain; /* Mostra a imagem inteira sem cortar */
 }
 
+/* Responsividade do cabeçalho */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Coloca os itens em coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+        gap: 10px; /* Diminui o espaço entre os elementos */
+    }
 
+    .header-container h1 {
+        font-size: 20px; /* Reduz o tamanho do título em telas pequenas */
+        margin-left: 0; /* Remove a margem para que o título fique centralizado */
+    }
 
-.header-custom {
-    background-color: #a3b8f1;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    padding: 15px 0;
+    .header-container img {
+        max-height: 60px; /* Ajusta o tamanho das imagens no cabeçalho */
+    }
 }
 
 /* Estilizando a barra de navegação */
