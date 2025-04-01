@@ -9,36 +9,24 @@
 </head>
 <body>
     <header class="py-2 header-custom">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <!-- Logo do lado esquerdo -->
-                <img src="./imagem/logo_iasd.png" alt="Logo" class="img-fluid" style="max-height: 90px;">
-    
-                <!-- Título centralizado -->
-                <h1 class="text-center flex-grow-1 d-none d-md-block ml-3">Missão Reciclar: Salvando o Planeta Juntos</h1>
-    
-                <!-- Logo do lado direito -->
-                <img src="./imagem/logo_espaço_vida-removebg-preview.png" alt="Logo" class="img-fluid" style="max-height: 90px;">
-            </div>
+        <div class="header-container d-flex align-items-center ">
+            <img src="./imagem/logo_iasd.png" alt="Logo" class="img-fluid mr-auto" style="max-height: 90px;">
+            <h1 class="flex-grow-1 text-left ml-3">Missão Reciclar:Salvando o Planeta Juntos</h1>
+            <img src="./imagem/logo_espaço_vida-removebg-preview.png" alt="Logo" class="img-fluid mr-auto"
+                style="max-height: 90px;">
         </div>
     </header>
 
+    <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand menu-item menu-home" href="./index.html">Página Inicial</a>
         <a class="navbar-brand menu-item menu-reciclagem" href="./Reciclagem.html">Reciclagem</a>
         <a class="navbar-brand menu-item menu-reciclar" href="./Reciclar.html">Reciclar</a>
         <a class="navbar-brand menu-item menu-local" href="./Local_Data.html">Local/Data</a>
-        <!-- Botão de menu de hambúrguer (vai aparecer em dispositivos menores) -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Links de navegação -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <form id="search-form" class="form-inline ml-auto">
-                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
-        </div>
+        <form id="search-form" class="form-inline ml-auto">
+            <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
     </nav>
 
     <!-- Conteúdo Dinâmico -->
@@ -76,27 +64,26 @@
     </div>
 
 
-    <footer class="footer-custom">
-        <div class="container">
-            <div class="row text-center text-md-left">
-                <div class="col-12 col-md-3">
-                    <img src="./imagem/logo_iasd.png" alt="Logo" class="img-fluid" style="max-height: 90px;">
-                </div>
-                <div class="col-12 col-md-3">
-                    <h5><strong>Número para Contato</strong></h5>
-                    <p>(95) 3626-6928</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h5><strong>Endereço</strong></h5>
-                    <p>AV. Luis Canuto Chaves, 1408, Caçari, Boa Vista, Roraima.</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h5><strong>Redes Sociais</strong></h5>
-                    <p>espacovidabv@gmail.com</p>
-                </div>
-            </div>
+   <!-- Rodapé -->
+   <footer class="footer-custom">
+    <div class="d-flex justify-content-around align-items-center">
+        <div>
+            <img src="./imagem/logo_iasd.png" alt="Logo" class="img-fluid" style="max-height: 90px;">
         </div>
-    </footer>
+        <div>
+            <h5><strong>Número para Contato</strong></h5>
+            <p>(95) 3626-6928</p>
+        </div>
+        <div>
+            <h5><strong>Endereço</strong></h5>
+            <p>AV. Luis Canuto Chaves, 1408, Caçari, Boa Vista, Roraima.</p>
+        </div>
+        <div>
+            <h5><strong>Redes Sociais</strong></h5>             
+            <p>espacovidabv@gmail.com</p>
+        </div>
+    </div>
+</footer>
 
     <!-- Scripts do Bootstrap e JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
