@@ -30,7 +30,7 @@ body {
 
 /* Estilizando o título */
 .header-container h1 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
     margin-left: 50px;
@@ -74,7 +74,7 @@ nav {
 }
 
 .header-custom {
-    background-color: #a3b8f1;
+    background-color:  #a3b8f1;                            
     color: rgb(255, 255, 255);
     width: 100%;
     padding: 15px 0;
@@ -82,7 +82,7 @@ nav {
 
 /* Estilizando a barra de navegação */
 .navbar {
-    background-color:  #a8ffa0;
+    background-color: #a8ffa0;         
 }
 
 /* Corrigir posição do footer */
